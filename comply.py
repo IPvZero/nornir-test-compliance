@@ -26,7 +26,7 @@ def runner(task):
         john = "blah-de-blah"
     else:
         LOCK.acquire()
-        print(Fore.GREEN + "*" * 80)
+        print(Fore.GREEN + Style.BRIGHT+ "*" * 80)
         print(Fore.RED + f"ALERT: {task.host} is not compliant!")
         print(Fore.YELLOW + "The following commands are missing:")
         try:

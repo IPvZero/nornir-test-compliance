@@ -38,4 +38,4 @@ def runner(task):
 
 results = nr.run(task=runner)
 
-print_title("COMPLETED COMPLIANCE TEST...")
+print_title("COMPLETED COMPLIANCE TEST")

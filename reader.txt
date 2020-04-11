@@ -1,0 +1,11 @@
+ntp server 99.99.99.99
+snmp-server group IPvZero v3 priv read john write test
+logging host 99.99.99.99
+
+username john privilege 15 password 0 cisco
+vrf definition MGMT
+ !
+ address-family ipv4
+ exit-address-family
+
+ip domain-name IPvZero.com
